@@ -23,7 +23,7 @@ let links = document.querySelectorAll(".close")
          // añadimos una nueva animacion
 
          setTimeout(function(){
-            location.href = "/";
+            location.href = "/boletines";
         },600)
         // añadimos un timer para quese  vea la animacion y posteriormente regresamos a la  pagina principal gracias a la funcion href
             
