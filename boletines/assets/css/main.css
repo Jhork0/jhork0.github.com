@@ -1,0 +1,187 @@
+/* 
+FCAB10 
+F8333C
+44AF69
+2B9EB3
+DBD5B5
+*/
+
+html {
+    font-family: 'Lemon', serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.titulo{
+    text-transform: uppercase;
+}
+
+.paragraph{
+    line-height: 1.8em;
+}
+
+image{
+    max-width: 100%;
+}
+
+.container{
+    background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.content{
+    /*box-shadow: diferenciacion horizontal diferenciacion vertical desenfoque amplitud color; */
+    /*rgba son colores con opacidad */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    max-width: 960px;
+    width: 100%;
+    height: 80vh;
+    background-color: #fff;
+    position: relative;
+    padding: 1.8em;
+    border-radius: 6px;
+    overflow: scroll;
+}
+.content{
+    padding: 1em;
+}
+td{
+    display: block;
+    width: 100%;
+}
+td:nth-of-type(1){
+   font-size: 1.5em;
+   font-weight: bold;
+   color:  #2B32B2;
+   align-items: center;
+}
+th{
+    display: none;
+}
+
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #1488CC;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23),;
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, .table th{
+    padding: 1em;
+    text-align: left;
+
+}
+.fa-star{
+    color: #efa94a;
+}
+
+.table tr:nth-child(even){
+    background-color: #1488CC;
+}
+
+.title-item{
+    /* border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #1488CC; */
+    /* Shorthand Properties es una herramienta que permite modificar propiedades visuales de css utilizando un solo llamado a una herramienta que engloba a todo el conjunto de modificaciones que queremos realizar  */
+    font-size: 1.5em;
+    border-bottom: solid 2px #1488CC ;
+    padding-bottom: 1em;
+}
+.position{
+    background-color: #2B32B2;
+    color: white;
+    padding: 0.5em;
+    /* border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em; */
+    border-radius: 3px;
+    margin-right: 0.5em;
+}
+.address{
+font-weight: bold;
+color: #2B32B2;
+font-size: 1.2em;
+margin-top: 2em;
+display: inline-block;
+}
+
+.mainImage{
+float: left;
+margin-right: 1em;
+height: 250px;
+width: 300px;
+}
+
+
+@media (min-width:800px){
+th{
+display: table-cell;
+}
+td{
+    width: auto;
+display: table-cell;
+}
+td:nth-of-type(1){
+    font-size: 1em;
+}
+    .content{
+        padding: 1.8em;
+    };
+}
+
+
+@media (min-height:550px){
+    .content{
+        height: 500px;}
+    .title-item{
+        font-size: 1.1;
+    }
+    .position{
+        border-radius: 2px;
+    }
+}
+
+/* Especifidad
+1. Important (un atrivuto de css que hace que sobre  escriba las propiedades, ignorando todas aquellas que no interfieren con la propiedad a la cual se le atrivulle el atrivvuto ya mencionado (important))
+2. Atrivuto style del html
+
+ Especifidad en los selectores
+1. Selectores por Id
+2. Selectores por clase atrivutos y pseudoclases
+3. Selectores de tipo y pseudoelementos 
+Es util en proyectos con muchos archivos que cambian las propiedaddes de un mismo elemento de diferente forma 
+*/
